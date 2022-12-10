@@ -1,0 +1,127 @@
+
+Use a Terminal Commands to answer the following questions. Your answer should consist the command you use and the output. You may simply copy and paste your terminal's content into the respective code blocks.
+
+Question 1: Get the IP Address of `skillsunion.com`.
+Answer: 165.22.244.85
+
+Question 2: Determine the network latency of `skillsunion.com`?
+Answer: 7ms
+
+Ping statistics for 165.22.244.85:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 7ms, Average = 7ms
+
+Question 3: Identify all devices on the path between your computer to `skillsunion.com`.
+Answer:   
+Tracing route to 165.22.244.85 over a maximum of 30 hops
+
+  1     5 ms     5 ms     5 ms  10.14.211.87
+  2    14 ms    18 ms    19 ms  ec2-18-141-171-33.ap-southeast-1.compute.amazonaws.com [18.141.171.33]
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *        *        *     Request timed out.
+  8     8 ms     7 ms     7 ms  100.65.11.1
+  9     6 ms     6 ms     6 ms  150.222.3.193
+ 10     7 ms     7 ms     7 ms  150.222.3.204
+ 11     6 ms     6 ms     6 ms  150.222.3.24
+ 12     6 ms     6 ms     6 ms  99.83.68.251
+ 13     *        *        *     Request timed out.
+ 14     *        *        *     Request timed out.
+ 15     *        *        *     Request timed out.
+ 16     *        *        *     Request timed out.
+ 17     7 ms     7 ms     6 ms  165.22.244.85
+
+Trace complete.
+
+Question 4: Look up the DNS of `skillsunion.com` without using `nslookup`.
+
+Answer:
+Name                                           Type   TTL   Section    IPAddress
+----                                           ----   ---   -------    ---------
+www.skillsunion.com                            A      60    Answer     165.22.244.85
+
+Question 5: Find out the `whois` details of `skillsunion.com`.
+
+Answer: 
+
+Domain name: SKILLSUNION.COM
+Registry Domain ID: 2443102751_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.namecheap.com
+Registrar URL: http://www.namecheap.com
+Updated Date: 2022-10-14T03:59:28.45Z
+Creation Date: 2019-10-13T04:16:35.00Z
+Registrar Registration Expiration Date: 2023-10-13T04:16:35.00Z
+Registrar: NAMECHEAP INC
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.9854014545
+Reseller: NAMECHEAP INC
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID:
+Registrant Name: Redacted for Privacy
+Registrant Organization: Privacy service provided by Withheld for Privacy ehf
+Registrant Street: Kalkofnsvegur 2
+Registrant City: Reykjavik
+Registrant State/Province: Capital Region
+Registrant Postal Code: 101
+Registrant Country: IS
+Registrant Phone: +354.4212434
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registrant Email: c1c83be59bc24945809b51de2173424e.protect@withheldforprivacy.com
+Registry Admin ID:
+Admin Name: Redacted for Privacy
+Admin Organization: Privacy service provided by Withheld for Privacy ehf
+Admin Street: Kalkofnsvegur 2
+Admin City: Reykjavik
+Admin State/Province: Capital Region
+Admin Postal Code: 101
+Admin Country: IS
+Admin Phone: +354.4212434
+Admin Phone Ext:
+Admin Fax:
+Admin Fax Ext:
+Admin Email: c1c83be59bc24945809b51de2173424e.protect@withheldforprivacy.com
+Registry Tech ID:
+Tech Name: Redacted for Privacy
+Tech Organization: Privacy service provided by Withheld for Privacy ehf
+Tech Street: Kalkofnsvegur 2
+Tech City: Reykjavik
+Tech State/Province: Capital Region
+Tech Postal Code: 101
+Tech Country: IS
+Tech Phone: +354.4212434
+Tech Phone Ext:
+Tech Fax:
+Tech Fax Ext:
+Tech Email: c1c83be59bc24945809b51de2173424e.protect@withheldforprivacy.com
+Name Server: dns1.registrar-servers.com
+Name Server: dns2.registrar-servers.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2022-12-10T13:44:55.90Z <<<
+For more information on Whois status codes, please visit https://icann.org/epp
+
+
+
+    Name: SKILLSUNION.COM
+    Registry Domain ID: 2443102751_DOMAIN_COM-VRSN
+    Domain Status:
+
+    clientTransferProhibited
+    Nameservers:
+
+    DNS1.REGISTRAR-SERVERS.COM
+
+    DNS2.REGISTRAR-SERVERS.COM
+
+Dates
+
+    Registry Expiration: 2023-10-13 04:16:35 UTC
+    Updated: 2022-10-14 03:59:28 UTC
+    Created: 2019-10-13 04:16:35 UTC
+
