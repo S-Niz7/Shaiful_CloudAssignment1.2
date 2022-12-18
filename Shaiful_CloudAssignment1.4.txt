@@ -1,0 +1,60 @@
+2017 - WannaCry ransomware attack.
+
+What: 
+WannaCry ransomware cryptoworm, which targeted computers running the Microsoft Windows operating system by encrypting data and demanding ransom payments in the Bitcoin cryptocurrency.
+The payload displays a message informing the user that their files have been encrypted, and demands a payment of around US$300 - $600 in bitcoin within 3 to 7 days while warning that
+"you have not so enough time.”
+
+What is The Effect: 
+The cryptoworm includes a transport mechanism to automatically spread itself. This transport code scans for vulnerable systems, then uses the EternalBlue exploit to gain access, and 
+the DoublePulsar tool to install and execute a copy of itself. WannaCry versions 0, 1, and 2 were created using Microsoft Visual C++ 6.0. It estimates that around 200,000 computers 
+were infected across 150 countries including computers, MRI scanners, blood-storage refrigerators and theatre equipment. Manufacturing companies halted production after the ransomware
+infected some of their systems. Renault also stopped production at several sites to stop the spread of the ransomware. Economic losses from the cyber-attack were estimated to reach up
+to US $4 billion
+
+How It did happen: 
+EternalBlue is an exploit of Microsoft's implementation of their Server Message Block (SMB) protocol through an exposed vulnerable SMB port. The U.S. National Security Agency (NSA) 
+(from whom the exploit was likely stolen) had already discovered the vulnerability, but used it to create an exploit for its own offensive work, rather than report it to Microsoft. 
+Microsoft eventually discovered the vulnerability, and on Tuesday, 14 March 2017, they issued security bulletin MS17-010, which detailed the flaw and announced that patches had been
+released for all Windows versions that were currently supported at that time, 
+
+How they solve the problem: 
+Microsoft released patches to close the exploit, but older systems were affected still. Security bulletin MS17-010 which detailed the flaw and announced that patches had been released
+for all Windows versions that were currently supported at that time. Days Later Microsoft released out-of-band security updates for end of life products Windows XP, Windows Server 
+2003 and Windows 8
+ 
+Steps
+Researcher Marcus Hutchins discovered the kill switch domain hardcoded in the malware Registering a domain name for a DNS sinkhole stopped the attack spreading as a worm, because the 
+ransomware only encrypted the computer's files if it was unable to connect to that domain, which all computers infected with WannaCry before the website's registration had been unable 
+to do. While this did not help already infected systems, it severely slowed the spread of the initial infection and gave time for defensive measures to be deployed worldwide, 
+particularly in North America and Asia, which had not been attacked to the same extent as elsewhere. 
+ 
+Response and action by attackers:
+•	 On 14 May, a first variant of WannaCry appeared with a new and second kill-switch registered by Matt Suiche on the same day.
+•	 This was followed by a second variant with the third and last kill-switch on 15 May, which was registered by Check Point threat intelligence analysts. 
+•	 A few days later, a new version of WannaCry was detected that lacked the kill switch altogether
+ 
+Then
+On 19 May, it was reported that hackers were trying to use a Mirai botnet variant to effect a distributed denial-of-service attack on WannaCry's kill-switch domain with the intention 
+of knocking it offline. On 22 May, Hutchins protected the domain by switching to a cached version of the site, capable of dealing with much higher traffic loads than the live site. 
+ 
+How It Was Finally Eliminated
+Separately, researchers from University College London and Boston University reported that their PayBreak system could defeat WannaCry and several other families of ransomware by 
+recovering the keys used to encrypt the user's data. It was discovered that Windows encryption APIs used by WannaCry may not completely clear the prime numbers used to generate the 
+payload's private keys from the memory, making it potentially possible to retrieve the required key if they had not yet been overwritten or cleared from resident memory. The key is 
+kept in the memory if the WannaCry process has not been killed and the computer has not been rebooted after being infected. This behaviour was used by a French researcher to develop 
+a tool known as WannaKey, which automates this process on Windows XP systems. This approach was iterated upon by a second tool known as Wanakiwi, which was tested to work on 
+Windows 7 and Server 2008 R2 as well. Within four days of the initial outbreak, new infections had slowed to a trickle due to these responses. 
+
+Source From <https://en.wikipedia.org/wiki/WannaCry_ransomware_attack> 
+
+How to prevent: 
+1.	Update your software and operating system regularly
+2.	Do not click on suspicious links
+3.	Do not open untrusted suspicious links
+4.	Do not open untrusted email attachments
+5.	Do not download from untrusted websites
+6.	Avoid usage of unknown USB 
+7.	Install internet security software
+8.	Install and update internet security software
+9.	Backup data
